@@ -42,7 +42,7 @@ $('#estados').change(function(){
     $('#municipios').removeClass('hidden');
 });
 
-$('#municipios').click(function(){
+$('#municipios').change(function(){
     let geonameId = $(this).val();
     let lng = parseFloat($('option:selected', this).attr('lng'));
     let lat = parseFloat($('option:selected', this).attr('lat'));
