@@ -24,13 +24,13 @@
                 <div class="row">
                     <div class="col-md-6">
                         <select id='estados' class="form-control">
-                            <option value="">Selecione um Estado</option>
+                            <option selected="true" disabled="disabled" value="">Selecione um Estado</option>
                             <option v-for="option in options" v-bind:value="option.geonameId" v-bind:lat="option.lat" v-bind:lng="option.lng" v-bind:fcode="option.fcode">{{ option.name }}</option>
                         </select>
                     </div>
                     <div class="col-md-6">
                         <select id='municipios' class="form-control hidden">
-                            <option value="">Selecione um Município</option>
+                            <option selected="true" disabled="disabled" value="">Selecione um Município</option>
                             <option v-for="option in options" v-bind:value="option.geonameId" v-bind:lat="option.lat" v-bind:lng="option.lng" v-bind:fcode="option.fcode">{{ option.name }}</option>
                         </select>
                     </div>
